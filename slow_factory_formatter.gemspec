@@ -18,8 +18,8 @@ Gem::Specification.new do |spec|
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib"]
 
-  spec.add_runtime_dependency "rspec-core", "~> 3.4"
-  spec.add_runtime_dependency "activesupport", "~> 4"
+  spec.add_runtime_dependency "rspec-core", "~> 3"
+  spec.add_runtime_dependency "activesupport", "< 7", ">= 4"
   spec.add_runtime_dependency "terminal-table", "~> 1.5"
   spec.add_development_dependency "bundler", "~> 1.10"
   spec.add_development_dependency "rake", "~> 10.0"
